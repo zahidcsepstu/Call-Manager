@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_phone"
+    android:weightSum="13">
+
+    <TextView
+        android:id="@+id/phone_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_weight="1"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_weight="10"
+        android:textSize="20sp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/phone_call"
+        android:layout_width="33dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/ic_phone_24px"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:backgroundTint="@color/colorPrimaryDark"/>
+
+    <Button
+        android:id="@+id/phone_sms"
+        android:layout_width="33dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/msg"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:backgroundTint="@color/colorPrimaryDark"/>
+</LinearLayout>

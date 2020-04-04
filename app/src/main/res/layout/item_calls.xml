@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/row_item"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/shape"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/call_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/user"
+            app:civ_circle_background_color="@color/colorPrimaryDark">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <LinearLayout
+            android:layout_marginStart="10dp"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/call_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="name" />
+
+            <TextView
+                android:id="@+id/call_duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="name" />
+
+            <TextView
+                android:id="@+id/call_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold|italic"
+                android:text="number" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/call_call"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/call"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:backgroundTint="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
