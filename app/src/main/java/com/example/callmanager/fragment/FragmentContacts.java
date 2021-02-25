@@ -38,8 +38,8 @@ public class FragmentContacts extends Fragment implements ContactsAdapter.OnClic
     private View v;
     private ContactsAdapter adapter;
     FloatingActionButton fab;
-    List<ContactsManager.ModelContactsShort> list = new ArrayList<>();
-    ContactsManager contactsManager = ContactsManager.getInstance();
+    private List<ContactsManager.ModelContactsShort> list = new ArrayList<>();
+    private ContactsManager contactsManager = ContactsManager.getInstance();
 
     public FragmentContacts() {
     }
